@@ -44,7 +44,7 @@ EX12: Write a function to color the price of each product in a different one eve
     <body>
         <h1 style="text-align:center;">My Apple Store</h1>
         <button type="button" onclick="changrTheBackground()">Set background color</button>
-        <button onclick="hangeHeaderDiv()" type="button">click to change shope name</button>
+        <button onclick="changeHeaderDiv()" type="button">click to change shope name</button>
         <p>The top 5 products of our shop
         </p>
         
@@ -138,10 +138,10 @@ EX12: Write a function to color the price of each product in a different one eve
           const changeHeaderDiv = function() {
               
              // let headerElement = document.getElementsByTagName("h1")[0]
-              let headerElement = document.querySelector("h1")
-              //console.log(headerElement)
-              headerElement.innerHTML = "Top Store"
-              //document.getElementById("h1").innerHTML = "your new text here"
+             // let headerElement = document.querySelector("h1")
+             // console.log(headerElement)
+            // headerElement.innerHTML = "Top Store"
+              document.querySelector("h1").innerHTML = "your new text here"
           }
           const changrTheBackground = function () {
             document.body.style.backgroundColor = "red";
